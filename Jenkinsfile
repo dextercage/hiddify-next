@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('flutter status') {
       steps {
-        sh '''
-#!/bin/bash
-flutter doctor'''
+        sh 'flutter doctor'
       }
     }
 
