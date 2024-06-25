@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'flutter'
-    }
-
-  }
+  agent any
   stages {
     stage('flutter status') {
       agent {
