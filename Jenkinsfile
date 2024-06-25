@@ -9,7 +9,7 @@ pipeline {
     stage('flutter status') {
       agent any
       steps {
-        sh 'flutter build'
+        sh 'flutter build apk'
       }
     }
 
