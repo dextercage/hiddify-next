@@ -1,15 +1,15 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'flutter'
+    }
+
+  }
   stages {
     stage('flutter status') {
-      agent {
-        node {
-          label 'flutter'
-        }
-
-      }
+      agent any
       steps {
-        sh 'flutter doctor'
+        sh 'flutter build'
       }
     }
 
